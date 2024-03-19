@@ -1,0 +1,289 @@
+.quadrado {
+  width: 90%;
+  max-width: 820px;
+  height: 69px;
+  background-color: #EBEBEB;
+  border-radius: 60px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 820px) {
+  .quadrado {
+    width: 80%; /* ou qualquer valor que você desejar para o tamanho no celular */
+    max-width: 300px; /* ou qualquer valor que você desejar para o tamanho no celular */
+    height: 50px; /* ou qualquer valor que você desejar para o tamanho no celular */
+    border-radius: 30px; /* ou qualquer valor que você desejar para o tamanho no celular */
+    font-size: 14px; /* ou qualquer valor que você desejar para o tamanho da fonte no celular */
+    margin-top: 30px;
+  }
+}
+  .quadrado h2 {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal; 
+  }
+  
+  body {
+    background-color: #0E0E0E;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Bloqueia a rolagem horizontal */
+    min-width: 100vw; /* Define a largura mínima igual à largura do viewport */
+}
+h1 {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 1200;
+  font-style: normal;
+  font-size: 60px;
+  color: #FFFFFF;
+  transition: all .3s ease-out;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px; /* ou qualquer outro tamanho desejado para dispositivos móveis */
+  }
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    text-align: center;
+    color: #7A7979;
+}
+#about h1 {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+#networks h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#svg1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 140px;
+  z-index: -2;
+  margin-top: 500px; /* Espaçamento do topo */
+  margin-left: -5px; /* Espaçamento da esquerda */
+}
+
+#svg2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 100px;
+  height: 140px;
+  z-index: -2;
+  margin-top: 350px; /* Espaçamento do topo */
+  margin-right: -10px; /* Espaçamento da direita */
+}
+
+#rectangle {
+  width: 343px;
+  height: 313px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+#gradient1 {
+  width: 343px;
+  height: 313px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%; /* Posiciona a partir do topo da janela de visualização */
+  margin-top: -156.5px; /* Metade da altura para centralizar verticalmente */
+  z-index: 22;
+}
+
+@media (min-width: 768px) {
+  #gradient1 {
+    top: 130px; /* Posicionamento para telas maiores */
+    margin-top: 0; /* Reseta o margin-top */
+  }
+}
+
+#gradient2 {
+  width: 343px;
+  height: 313px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%; /* Posiciona a partir do topo da janela de visualização */
+  margin-top: 530px; /* Metade da altura para centralizar verticalmente */
+  opacity: 0; /* Começa com a opacidade 0 para o efeito de fade in */
+  transition: opacity 5s ease; /* Adiciona uma transição suave */
+  z-index: 22;
+}
+
+@media (min-width: 768px) {
+  #gradient2 {
+    top: 930px; /* Posicionamento para telas maiores */
+    margin-top: 0; /* Reseta o margin-top */
+  }
+}
+
+#gradient2.fade-in {
+  opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+  #rectangle {
+    width: 679px; /* Aumento no tamanho */
+    height: 489px; /* Aumento no tamanho */
+  }
+}
+
+.social-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 150px; /* Distância do rodapé */
+  transform: translateX(-50%);
+  display: flex;
+}
+
+
+/* Estilize as bolas individualmente se desejar */
+.social-button:nth-child(2) {
+  background-color: #EC3C3C; /* GitHub black */
+}
+
+.social-button:last-child {
+  background-color: #EC3C3C; /* Instagram pink */
+}
+
+.social-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #EC3C3C; 
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  margin-right: 10px;
+  position: relative; /* Adiciona position relative */
+}
+
+.linkedin-icon {
+  width: 24px; /* Tamanho do ícone */
+  height: 24px; /* Tamanho do ícone */
+  fill: #fff; /* Cor do ícone */
+}
+
+#forms {
+  position: absolute;
+  bottom: 90px; /* Mova 20px para cima */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+#skills {
+  margin-top: 600px;
+}
+
+.card {
+  width: 300px;
+  height: 136px;
+  background-color: #020C1B;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.card h2 {
+  color: #EC3C3C;
+  text-align: center;
+  font-family: "Zen Dots", sans-serif;
+  margin-bottom: 10px; /* Espaço entre o título e o ícone */
+}
+
+.card svg {
+  width: 24px;
+  height: 24px;
+  margin-top: 0px; /* Espaço entre o ícone e o conteúdo abaixo */
+}
+
+#onepage {
+  overflow-x: hidden; /* Bloqueia a rolagem horizontal apenas para o section com o ID 'onepage' */
+}
+
+.linkedin-icon {
+  width: 70%; /* Ajusta o tamanho do ícone para ocupar 70% da bola */
+  height: 70%; /* Ajusta o tamanho do ícone para ocupar 70% da bola */
+  fill: #fff; /* Cor do ícone */
+}
+
+.carousel {
+  width: 300px;
+  margin: 0 auto; /* Centraliza o carrossel */
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
